@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <title>ONLYOFFICE</title>
+    <link rel="icon" href="../static/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/editor.css"/>
+
+    <script type="text/javascript" src="http://127.0.0.1/web-apps/apps/api/documents/api.js"></script>
+
+<!--    <script type="text/javascript" th:inline="javascript">-->
+
+<!--        var docEditor;-->
+<!--        var innerAlert = function (message) {-->
+<!--            if (console && console.log)-->
+<!--                console.log(message);-->
+<!--        };-->
+
+<!--        var onAppReady = function () {-->
+<!--            innerAlert("Document editor ready");-->
+<!--        };-->
+
+<!--        var onDocumentStateChange = function (event) {-->
+<!--            var title = document.title.replace(/\*$/g, "");-->
+<!--            document.title = title + (event.data ? "*" : "");-->
+<!--        };-->
+
+<!--        var onRequestEditRights = function () {-->
+<!--            location.href = location.href.replace(RegExp("mode=view\&?", "i"), "");-->
+<!--        };-->
+
+<!--        var onError = function (event) {-->
+<!--            if (event)-->
+<!--                innerAlert(event.data);-->
+<!--        };-->
+
+<!--        var onOutdatedVersion = function (event) {-->
+<!--            location.reload(true);-->
+<!--        };-->
+
+<!--        var config = [# th:utext=${fileModel}/];-->
+<!--        config.width = "100%";-->
+<!--        config.height = "100%";-->
+<!--        config.events = {-->
+<!--            "onAppReady": onAppReady,-->
+<!--            "onDocumentStateChange": onDocumentStateChange,-->
+<!--            'onRequestEditRights': onRequestEditRights,-->
+<!--            "onError": onError,-->
+<!--            "onOutdatedVersion": onOutdatedVersion,-->
+<!--        };-->
+
+
+<!--        var сonnectEditor = function () {-->
+<!--            docEditor = new DocsAPI.DocEditor("iframeEditor", config);-->
+<!--        };-->
+
+<!--        if (window.addEventListener) {-->
+<!--            window.addEventListener("load", сonnectEditor);-->
+<!--        } else if (window.attachEvent) {-->
+<!--            window.attachEvent("load", сonnectEditor);-->
+<!--        }-->
+
+<!--    </script>-->
+
+</head>
+<body>
+<div class="form">
+    <div id="iframeEditor"></div>
+</div>
+</body>
+</html>
